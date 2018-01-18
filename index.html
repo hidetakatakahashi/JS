@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>js課題</title>
+  </head>
+  <body>
+    <header>
+      <h1>js課題</h1>
+      <a id="smoothScrollTop" href="#smoothScrollEnd">スムーススクロール（下に移動します）↓↓↓</a>
+      <button class="login" id="modal-window">ログイン</button>
+
+      <!-- ハンバーガーメニュー -->
+      <button class="hamburger" id="hamburger-open"></button>
+      <div class="hamburger-menu"></div>
+      <div class="fadeLayer2"></div>
+
+      <nav class="nav">
+        <ul class="list-nav">
+          <li class="accordion">メガメニュー１</li>
+          <li class="accordion">メガメニュー２</li>
+          <li class="accordion">メガメニュー３</li>
+          <li class="accordion">メガメニュー４</li>
+          <li class="accordion">メガメニュー５</li>
+        </ul>
+      </nav>
+    </header>
+
+<!-- main -->
+
+    <main>
+      <!-- ログインメニュー -->
+      <div class="fadeLayer"></div>
+      <div class="login-menu">
+        <ul>
+          <li>
+            <label>IDを入力してください</label>
+            <input value="ID">
+          </li>
+          <li>
+            <label>パスワードを入力してください</label>
+            <input value="password">
+          </li>
+        </ul>
+      </div>
+
+      <!-- バナー -->
+      <img class="banner1" src="koala.jpg">
+      <img class="banner2" src="Penguins.jpg">
+      <img class="banner3" src="Jellyfish.jpg">
+
+      <dl id="acMenu">
+        <dt>アコーディオンメニュー1</dt>
+        <dd>内容１</dd>
+        <dt>アコーディオンメニュー2</dt>
+        <dd>内容２</dd>
+        <dt>アコーディオンメニュー3</dt>
+        <dd>内容３</dd>
+      </dl>
+      <ul class="tab">
+      	<li class="select">タブ1</li>
+      	<li>タブ2</li>
+      	<li>タブ3</li>
+      	<li>タブ4</li>
+      </ul>
+      <div class="tab-body">
+        <ul>
+          <li>内容１</li>
+          <li class="hide">内容２</li>
+          <li class="hide">内容３</li>
+          <li class="hide">内容４</li>
+        </ul>
+      </div>
+    </main>
+    <footer>
+      <a id="smoothScrollEnd" href="#smoothScrollTop">スムーススクロール（上に移動します）↑↑↑</a>
+    </footer>
+    <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="smoothScroll.js"></script>
+    <script type="text/javascript" src="accordion.js"></script>
+    <script type="text/javascript" src="modalWindow.js"></script>
+    <script type="text/javascript" src="hamburger.js"></script>
+    <script type="text/javascript" src="slideshow.js"></script>
+    <script type="text/javascript" src="tabchange.js"></script>
+  </body>
+</html>
