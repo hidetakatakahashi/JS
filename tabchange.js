@@ -16,6 +16,6 @@ $(function() {
 		$('.tab li').removeClass('select');
 
 		//クリックされたタブのみにクラスselectをつけます。
-		$(this).addClass('select')
+		$(this).addClass('select');
 	});
 });

@@ -80,6 +80,19 @@ main{
   width:1000px;
   margin:0 auto;
 }
+.megamenu-body{
+  width:1000px;
+  margin:0 auto;
+  height:300px;
+  position:absolute;
+  z-index:100;
+  border-bottom:1px solid black;
+  border-left:1px solid black;
+  border-right:1px solid black;
+  box-sizing: border-box;
+  background-color:white;
+  display:none;
+}
 #acMenu{
   display:block;
   width:250px;
@@ -176,8 +189,29 @@ main{
   height:400px;
   display:none;
 }
-.banner:first-child{
+.banner{
+  /* display:inline-block; */
+}
+.banner-button{
+  width:50px;
+  height:100px;
+  font-size:40px;
+  margin:-50px auto;
+  padding:0;
+}
+.change-banner{
+  display:inline-block;
+  text-align: center;
+  height:100px;
   width:500px;
-  height:400px;
-  display:block;
+  margin:auto;
+  vertical-align:middle;
+  
+}
+.click-banner{
+  height:60px;
+  width:80px;
+}
+.select-banner{
+  border: 3px solid #ff0;
 }
