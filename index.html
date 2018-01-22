@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="stylesheet.css">
     <title>js課題</title>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
     <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="jquery.pjax.js"></script>
+    <!-- <script type="text/javascript" src="barba.js"></script> -->
+    <!-- <script type="text/javascript" src="jquery.pjax.js"></script> -->
+    <!-- <script type="text/javascript" src="barba.min.js" ></script> -->
     <script type="text/javascript" src="smoothScroll.js"></script>
     <script type="text/javascript" src="accordion.js"></script>
     <script type="text/javascript" src="modalWindow.js"></script>
@@ -14,6 +17,8 @@
     <script type="text/javascript" src="tabchange.js"></script>
     <script type="text/javascript" src="megamenu.js"></script>
     <script type="text/javascript" src="hidoukiseni.js"></script>
+    <script type="text/javascript" src="json.js"></script>
+    <script type="text/javascript" src="yubinno.js"></script>
   </head>
   <body>
     <header>
@@ -49,6 +54,12 @@
 <!-- main -->
 
     <main id="content">
+
+      <!-- <div id="barba-wrapper" aria-live="polite">
+        <div class="barba-container">
+          <p>pjax遷移前</p>
+        </div>
+      </div> -->
       <!-- ログインメニュー -->
       <div class="fadeLayer"></div>
       <div class="login-menu">
@@ -101,7 +112,17 @@
           <li class="hide">内容４</li>
         </ul>
       </div>
-      <a class="btn" href="next.html">Click To Change</a>
+      <!-- <a class="btn" href="next.html">Click To Change</a> -->
+      <h1>郵便番号</h1>
+      <!-- 郵便番号入力のテキストボックス -->
+      <input type="text" id="zipcode" value="" maxlength="7">
+      <input type="button" id="search_btn" value="検索">
+      <p>※7桁の半角数字で入力してください</p>
+
+      <!-- 検索結果の表示エリア -->
+      <div id="zip_result"></div>
+      <div id="images">
+      </div>
     </main>
     <footer>
       <a id="smoothScrollEnd" href="#smoothScrollTop">スムーススクロール（上に移動します）↑↑↑</a>
